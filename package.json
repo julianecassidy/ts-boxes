@@ -1,6 +1,6 @@
 {
-  "name": "boxes",
-  "version": "0.2.0",
+  "name": "new-ts",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "*",
@@ -9,12 +9,14 @@
     "@types/jest": "*",
     "@types/node": "*",
     "@types/react": "*",
+    "@types/uuid": "*",
     "@types/react-dom": "*",
     "react": "*",
     "react-dom": "*",
     "react-scripts": "*",
     "typescript": "*",
-    "web-vitals": "*"
+    "web-vitals": "*",
+    "uuid": "*"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -23,7 +25,10 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -36,8 +41,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@types/uuid": "^8.3.1"
   }
 }
